@@ -1,16 +1,14 @@
-var add = document.getElementById('addElem')
+var add = document.getElementById('addElem');
 
-var list = document.getElementById('list')
+var list = document.getElementById('list');
 
-var number = document.getElementsByTagName('li')
+var number = document.getElementsByTagName('li');
 
-var i = number.length;
-console.log(i),
+var l = number.length;
+console.log(l),
 
-add.addEventListener('click', function(i){
+add.addEventListener('click', function(l){
 	var element = document.createElement('li');
-	for (j = 0; j < i; j++) {
-		element.innerHtml = 'item' + j;
-		list.appendChild(element);	
-	}
+	element.innerHTML = 'item' + ++l; 
+	list.appendChild(element);	
 });
