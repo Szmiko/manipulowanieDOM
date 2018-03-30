@@ -7,8 +7,9 @@ var number = document.getElementsByTagName('li');
 var l = number.length;
 console.log(l),
 
-add.addEventListener('click', function(l){
+add.addEventListener('click', function(){
+	l++;
 	var element = document.createElement('li');
-	element.innerHTML = 'item' + ++l; 
+	element.innerHTML = 'item ' + l; 
 	list.appendChild(element);	
 });
